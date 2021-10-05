@@ -1,0 +1,75 @@
+package servlet;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import interfaces.SesionInterface;
+import mantenieminto.GestionSesion;
+import model.Sesion;
+
+/**
+ * Servlet implementation class SesionServlet
+ */
+@WebServlet(name = "sesionserv", urlPatterns = { "/sesionserv" })
+public class SesionServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public SesionServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+private void iniciarSesion(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String login, clave;
+		login=request.getParameter("login");
+		clave=request.getParameter("clave");
+		
+		//Invocar al metodo sesion
+		
+		Sesion bean=SesionInterface.iniciarSesion(login, clave);
+		
+		
+		//Validar objeto bean
+		
+		if(bean==null) {
+			request.setAttribute("MENSAJE", "Usuario y/o clave incorrectos..");
+			request.getRequestDispatcher("/Sesion.jsp").forward(request, response);
+		}
+		else {
+			
+			//Obtener el codigo del usuario actual
+			int codPerfil;
+			codPerfil = bean.getCodPerfil();
+			
+			
+			
+			//Crear una sesion
+			
+			HttpSession session=request.getSession();
+			
+			//Crear atributos desntro del objeto sesion
+			
+			session.setAttribute("MenuOpciones", aMenuOpciones);
+			session.setAttribute("sesion", bean);
+			
+			request.getRequestDispatcher("/MenuPrincipal.jsp").forward(request, response);
+		}
+		
+	}
+
+}

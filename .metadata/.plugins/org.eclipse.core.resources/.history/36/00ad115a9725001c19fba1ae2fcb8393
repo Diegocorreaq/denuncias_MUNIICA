@@ -1,0 +1,143 @@
+package model;
+
+public class Usuario {
+	private String DNI_Usuario;
+	private String Nom_Usuario;
+	private String Ape_Usuario;
+	private String Fecha_Nacimiento;	
+	private String Contraseña;
+	private String Contraseña_Nueva;
+	private String Direccion_Usuario;
+	private String Distrito_Usuario; 
+	private String Email_Usuario;
+	private String Provincia_Usuario;
+	private String Rep_Contraseña_Nueva;
+	private String Telefono_Usuario;
+	private String tipo_usuario;
+	
+	
+	
+	
+	
+	public Usuario(String dNI_Usuario, String nom_Usuario, String ape_Usuario, String fecha_Nacimiento,
+			String contraseña, String direccion_Usuario, String distrito_Usuario, String email_Usuario,
+			String provincia_Usuario, String telefono_Usuario) {
+		super();
+		DNI_Usuario = dNI_Usuario;
+		Nom_Usuario = nom_Usuario;
+		Ape_Usuario = ape_Usuario;
+		Fecha_Nacimiento = fecha_Nacimiento;
+		Contraseña = contraseña;
+		Direccion_Usuario = direccion_Usuario;
+		Distrito_Usuario = distrito_Usuario;
+		Email_Usuario = email_Usuario;
+		Provincia_Usuario = provincia_Usuario;
+		Telefono_Usuario = telefono_Usuario;
+	}
+	public Usuario(String dNI_Usuario) {
+	
+		DNI_Usuario = dNI_Usuario;
+	}
+	public Usuario() {
+	}
+	public Usuario(String dNI_Usuario, String nom_Usuario, String ape_Usuario, String fecha_Nacimiento,
+			String contraseña, String contraseña_Nueva, String direccion_Usuario, String distrito_Usuario,
+			String email_Usuario, String provincia_Usuario, String rep_Contraseña_Nueva, String telefono_Usuario,
+			String tipo_usuario) {
+		DNI_Usuario = dNI_Usuario;
+		Nom_Usuario = nom_Usuario;
+		Ape_Usuario = ape_Usuario;
+		Fecha_Nacimiento = fecha_Nacimiento;
+		Contraseña = contraseña;
+		Contraseña_Nueva = contraseña_Nueva;
+		Direccion_Usuario = direccion_Usuario;
+		Distrito_Usuario = distrito_Usuario;
+		Email_Usuario = email_Usuario;
+		Provincia_Usuario = provincia_Usuario;
+		Rep_Contraseña_Nueva = rep_Contraseña_Nueva;
+		Telefono_Usuario = telefono_Usuario;
+		this.tipo_usuario = tipo_usuario;
+	}
+	public String getDNI_Usuario() {
+		return DNI_Usuario;
+	}
+	public void setDNI_Usuario(String dNI_Usuario) {
+		DNI_Usuario = dNI_Usuario;
+	}
+	public String getNom_Usuario() {
+		return Nom_Usuario;
+	}
+	public void setNom_Usuario(String nom_Usuario) {
+		Nom_Usuario = nom_Usuario;
+	}
+	public String getApe_Usuario() {
+		return Ape_Usuario;
+	}
+	public void setApe_Usuario(String ape_Usuario) {
+		Ape_Usuario = ape_Usuario;
+	}
+	public String getFecha_Nacimiento() {
+		return Fecha_Nacimiento;
+	}
+	public void setFecha_Nacimiento(String fecha_Nacimiento) {
+		Fecha_Nacimiento = fecha_Nacimiento;
+	}
+	public String getContraseña() {
+		return Contraseña;
+	}
+	public void setContraseña(String contraseña) {
+		Contraseña = contraseña;
+	}
+	public String getContraseña_Nueva() {
+		return Contraseña_Nueva;
+	}
+	public void setContraseña_Nueva(String contraseña_Nueva) {
+		Contraseña_Nueva = contraseña_Nueva;
+	}
+	public String getDireccion_Usuario() {
+		return Direccion_Usuario;
+	}
+	public void setDireccion_Usuario(String direccion_Usuario) {
+		Direccion_Usuario = direccion_Usuario;
+	}
+	public String getDistrito_Usuario() {
+		return Distrito_Usuario;
+	}
+	public void setDistrito_Usuario(String distrito_Usuario) {
+		Distrito_Usuario = distrito_Usuario;
+	}
+	public String getEmail_Usuario() {
+		return Email_Usuario;
+	}
+	public void setEmail_Usuario(String email_Usuario) {
+		Email_Usuario = email_Usuario;
+	}
+	public String getProvincia_Usuario() {
+		return Provincia_Usuario;
+	}
+	public void setProvincia_Usuario(String provincia_Usuario) {
+		Provincia_Usuario = provincia_Usuario;
+	}
+	public String getRep_Contraseña_Nueva() {
+		return Rep_Contraseña_Nueva;
+	}
+	public void setRep_Contraseña_Nueva(String rep_Contraseña_Nueva) {
+		Rep_Contraseña_Nueva = rep_Contraseña_Nueva;
+	}
+	public String getTelefono_Usuario() {
+		return Telefono_Usuario;
+	}
+	public void setTelefono_Usuario(String telefono_Usuario) {
+		Telefono_Usuario = telefono_Usuario;
+	}
+	public String getTipo_usuario() {
+		return tipo_usuario;
+	}
+	public void setTipo_usuario(String tipo_usuario) {
+		this.tipo_usuario = tipo_usuario;
+	}
+	
+	
+	
+	
+}

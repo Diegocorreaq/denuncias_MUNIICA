@@ -1,0 +1,16 @@
+package model;
+
+public class Usuario {
+	private String DNI_Usuario;
+	private String Nom_Usuario;
+	private String Ape_Usuario;
+	private String Fecha_Nacimiento;	
+	private String Contraseña;
+	private String Direccion_Usuario;
+	private String Distrito_Usuario; 
+	private String Email_Usuario;
+	private String Provincia_Usuario;
+	private String Telefono_Usuario;
+	
+	
+	

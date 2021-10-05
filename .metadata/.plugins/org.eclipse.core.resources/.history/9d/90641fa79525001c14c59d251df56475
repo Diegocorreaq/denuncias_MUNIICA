@@ -1,0 +1,48 @@
+package mantenieminto;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import interfaces.UsuarioInterface;
+import model.Usuario;
+import utils.MySQLConexion8;
+
+public class GestionUsuario  implements UsuarioInterface{
+
+	@Override
+	public int registar(Usuario u) {
+		int rs=0; // valor por default en caso de error
+		//plantilla de DB- JDBC -> java.sql
+		Connection conn=null;
+		PreparedStatement pst=null;
+		try {
+			conn=MySQLConexion8.getConexion();
+			String sql="insert into tb_usuarios values (?,?,?,?,?,?,?,?,?,?,?,?)";
+			pst=conn.prepareStatement(sql);
+			pst.setString(1,u.getApe_Nom_Usuario());
+			pst.setString(2,u.getApellido());
+			pst.setString(3,u.getUsuario());
+			pst.setString(4,u.getClave());
+			pst.setString(5,u.getNombre());
+			pst.setString(6,u.getApellido());
+			pst.setString(7,u.getUsuario());
+			pst.setString(8,u.getClave());
+			pst.setString(9,u.getNombre());
+			pst.setString(10,u.getApellido());
+			pst.setString(11,u.getUsuario());
+			pst.setString(12,u.getFechNacimiento());
+			
+			rs=pst.executeUpdate();
+
+		} catch (Exception e) {
+			System.out.println("error al registrar usuario: " + e.getMessage());
+			// TODO: handle exception
+		}
+		finally {
+			MySQLConexion8.closeConexion(conn);
+		}
+		
+		return rs;
+	}
+	
+}

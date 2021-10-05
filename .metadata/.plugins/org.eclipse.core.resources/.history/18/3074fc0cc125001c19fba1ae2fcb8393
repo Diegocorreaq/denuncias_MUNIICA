@@ -1,0 +1,31 @@
+package fabrica;
+
+import interfaces.SesionInterface;
+
+public abstract class DAOFactory {
+	   public static final int MYSQL = 1;
+	   
+	   
+	   
+	   
+	   public abstract SesionInterface getSesionInterface();
+	   
+	   public static DAOFactory getDAOFactory(int whichFactory){
+	        switch(whichFactory){
+	       	case MYSQL:
+	        	   return new MySqlDAOFactory();
+	        	case XML:
+	        	    //return new XmlDAOFactory();
+	        	case ORACLE:
+	        	    return null;
+	        	/*case DB2:
+	        	    return new Db2DAOFactory();*/
+	        	case SQLSERVER:
+	        	    return null;
+	        	/*case XML:
+	        	    return new XmlDAOFactory();*/
+	        	default:
+	        	    return null;
+	        }
+	     }
+}

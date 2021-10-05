@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;servlet.UsusarioServlet&apos; to &apos;UsuarioServlet&apos;&#x0D;&#x0A;- Original project: &apos;Municipalidad_Provincial de ICA-Navegable&apos;&#x0D;&#x0A;- Original element: &apos;servlet.UsusarioServlet&apos;&#x0D;&#x0A;- Renamed element: &apos;servlet.UsuarioServlet&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;UsusarioServlet&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;servlet{UsusarioServlet.java[UsusarioServlet" matchStrategy="1" name="UsuarioServlet" qualified="false" references="true" similarDeclarations="false" stamp="1633407756455" textual="false" version="1.0"/>
+</session>

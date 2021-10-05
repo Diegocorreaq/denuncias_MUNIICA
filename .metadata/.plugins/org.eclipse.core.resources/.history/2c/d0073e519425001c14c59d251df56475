@@ -1,0 +1,36 @@
+package mantenieminto;
+
+import interfaces.UsuarioInterface;
+import model.Usuario;
+
+public class GestionUsuario  implements UsuarioInterface{
+
+	@Override
+	public int registar(Usuario u) {
+		int rs=0; // valor por default en caso de error
+		//plantilla de DB- JDBC -> java.sql
+		Connection conn=null;
+		PreparedStatement pst=null;
+		try {
+			conn=MySQLConexion5.getConexion();
+			String sql="insert into tb_usuarios values (null,?,?,?,?,?,default,default)";
+			pst=conn.prepareStatement(sql);
+			pst.setString(1,u.getNombre());
+			pst.setString(2,u.getApellido());
+			pst.setString(3,u.getUsuario());
+			pst.setString(4,u.getClave());
+			pst.setString(5,u.getFechNacimiento());
+			rs=pst.executeUpdate();
+
+		} catch (Exception e) {
+			System.out.println("error al registrar usuario: " + e.getMessage());
+			// TODO: handle exception
+		}
+		finally {
+			MySQLConexion5.closeConexion(conn);
+		}
+		
+		return rs;
+	}
+	
+}

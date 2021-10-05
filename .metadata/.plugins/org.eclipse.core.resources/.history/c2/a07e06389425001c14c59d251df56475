@@ -1,0 +1,8 @@
+package mantenieminto;
+
+import interfaces.UsuarioInterface;
+import model.Usuario;
+
+public class GestionUsuario  implements UsuarioInterface{
+	public int registar(Usuario u);
+}

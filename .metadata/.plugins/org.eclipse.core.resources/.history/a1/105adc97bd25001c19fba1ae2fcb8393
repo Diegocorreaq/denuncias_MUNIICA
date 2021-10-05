@@ -1,0 +1,14 @@
+package mantenieminto;
+
+import interfaces.SesionInterface;
+import model.Sesion;
+
+public class GestionSesion implements SesionInterface{
+
+	@Override
+	public Sesion iniciarSesion(String cuenta, String contraseña) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

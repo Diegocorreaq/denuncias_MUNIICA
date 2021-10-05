@@ -1,0 +1,7 @@
+package mantenieminto;
+
+import interfaces.UsuarioInterface;
+
+public class GestionUsuario  implements UsuarioInterface{
+	
+}

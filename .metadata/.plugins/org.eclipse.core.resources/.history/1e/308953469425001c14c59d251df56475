@@ -1,0 +1,14 @@
+package mantenieminto;
+
+import interfaces.UsuarioInterface;
+import model.Usuario;
+
+public class GestionUsuario  implements UsuarioInterface{
+
+	@Override
+	public int registar(Usuario u) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="interfaces.UsuarioInterface"/>
+    <fullyQualifiedTypeName name="mantenieminto.GestionUsuario"/>
+    <fullyQualifiedTypeName name="model.Usuario"/>
+    <fullyQualifiedTypeName name="java.sql.SQLIntegrityConstraintViolationException"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="utils.MySQLConexion8"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="fabrica.MySqlDAOFactory"/>
+    <fullyQualifiedTypeName name="mantenieminto.GestionSesion"/>
+    <fullyQualifiedTypeName name="fabrica.DAOFactory"/>
+    <fullyQualifiedTypeName name="interfaces.SesionInterface"/>
+    <fullyQualifiedTypeName name="model.Sesion"/>
+    <fullyQualifiedTypeName name="service.SesionService"/>
+</qualifiedTypeNameHistroy>

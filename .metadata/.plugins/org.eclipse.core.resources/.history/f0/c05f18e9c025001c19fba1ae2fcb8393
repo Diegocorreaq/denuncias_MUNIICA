@@ -1,0 +1,13 @@
+package fabrica;
+
+import interfaces.SesionInterface;
+
+public class MySqlDAOFactory extends DAOFactory{
+
+	@Override
+	public SesionInterface getSesionInterface() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
