@@ -40,9 +40,9 @@
 						<a href="crearCuenta.jsp"><h6>Crear cuenta</h6></a>
 				</div>
 				<div class="campos" >
-						<input type="text" required="required" pattern="{1,8}" size="50" placeholder="Usuario" name="login" style="">
+						<input type="text" required="required" pattern="{1,8}" size="50" placeholder="DNI Usuario" onkeypress='validate(event)' name="login" style=""/>
 						<br>
-						<input type="password" size="50" required="required" pattern="{1,30}" placeholder="Contraseña" name="clave" style="margin: 20px 0 0 0">
+						<input type="password" size="50" required="required" pattern="{1,30}" placeholder="Contraseña" name="clave" style="margin: 20px 0 0 0"/>
 						<br>
 						<div style=" margin: 10px 0 0 0;"> 
 						<a href="recuperarContraseña.jsp">
@@ -69,4 +69,24 @@
 
  
 </body>
+<script>
+
+function validate(evt) {
+	  var theEvent = evt || window.event;
+
+	  // Handle paste
+	  if (theEvent.type === 'paste') {
+	      key = event.clipboardData.getData('text/plain');
+	  } else {
+	  // Handle key press
+	      var key = theEvent.keyCode || theEvent.which;
+	      key = String.fromCharCode(key);
+	  }
+	  var regex = /[0-9]|\./;
+	  if( !regex.test(key) ) {
+	    theEvent.returnValue = false;
+	    if(theEvent.preventDefault) theEvent.preventDefault();
+	  }
+	}
+</script>
 </html>
