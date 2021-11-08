@@ -18,7 +18,8 @@
     	margin-left:40%;
     }
 	</style>
-<title>Insert title here</title>
+<title>Menú Principal | Municipalidad de Ica</title>
+<link rel="icon" type="image/png" href="logo_ico.ico">
 </head>
 <body>
 <div class="container">

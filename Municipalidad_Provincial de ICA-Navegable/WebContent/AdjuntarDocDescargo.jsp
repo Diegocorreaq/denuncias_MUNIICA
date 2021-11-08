@@ -42,7 +42,8 @@
     }	
 									
 </style>
-<title>Insert title here</title>
+<title>Adjuntar Documento Descargo | Municipalidad de Ica</title>
+<link rel="icon" type="image/png" href="logo_ico.ico">
 </head>
 <body>
 <div class="container" style="width: 100%; height: 100%; margin: 0%; padding: 0%">

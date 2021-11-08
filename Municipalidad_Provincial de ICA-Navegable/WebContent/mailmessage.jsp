@@ -112,7 +112,8 @@
    
 %>
 
-<title>Enviando Correo</title>
+<title>Enviando Correo | Municipalidad de Ica</title>
+<link rel="icon" type="image/png" href="logo_ico.ico">
 
 <center><div class="container" style=" margin: 2% auto;" >
 	<div class="row">
