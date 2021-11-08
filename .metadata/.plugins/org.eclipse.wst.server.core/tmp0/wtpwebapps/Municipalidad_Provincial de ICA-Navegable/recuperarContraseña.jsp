@@ -25,16 +25,13 @@
 		</div>
 		
 			<div class="col-md-6">
-<form action="mailmessage.jsp">
+<form action="loginusu?opcion=e" method="post">
 				<div class="CrearCuenta" style=" margin: 0 0 0 300px">
 						<a href="#"><h6>Recuperar Contraseña</h6></a>
 				</div>
 				<div class="campos" >
-						<span style="font-weight: bold; margin-right: 81px">Usuario: </span>
-						<input type="text" size="35" placeholder="" name="Usuario" style="margin: 20px 0 0 0">
-						<br>
-						<span style="font-weight: bold; margin-right: 109px">DNI: </span>
-						<input type="text" size="20" placeholder="" name="DNI" style="margin: 20px 0 0 0">
+						<span style="font-weight: bold; margin-right: 81px"> DNI Usuario: </span>
+						<input type="text" size="35" placeholder="" name="dniusu" style="margin: 20px 0 0 0">
 						<br>
 						<span style="font-weight: bold;">Correo electronico: </span>
 						<input type="text" size="30" placeholder="" name="mail" style="margin: 20px 0 0 0">

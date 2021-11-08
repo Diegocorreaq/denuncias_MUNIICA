@@ -1,14 +1,16 @@
 package fabrica;
 
-import interfaces.SesionInterface;
-import mantenieminto.GestionSesion;
+
+import interfaces.UsuarioInterface;
+import mantenieminto.GestionUsuario;
 
 public class MySqlDAOFactory extends DAOFactory{
 
+
 	@Override
-	public SesionInterface getSesionInterface() {
+	public UsuarioInterface getUsuarioInterface() {
 		// TODO Auto-generated method stub
-		return new GestionSesion();
+		return new GestionUsuario();
 	}
 
 }

@@ -1,6 +1,6 @@
 package fabrica;
 
-import interfaces.SesionInterface;
+import interfaces.UsuarioInterface;
 
 public abstract class DAOFactory {
 	   public static final int MYSQL = 1;
@@ -11,7 +11,7 @@ public abstract class DAOFactory {
 	   
 	   
 	   
-	   public abstract SesionInterface getSesionInterface();
+	   public abstract UsuarioInterface getUsuarioInterface();
 	   
 	   public static DAOFactory getDAOFactory(int whichFactory){
 	        switch(whichFactory){

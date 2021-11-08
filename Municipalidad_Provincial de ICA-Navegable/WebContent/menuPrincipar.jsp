@@ -26,8 +26,14 @@
 <img src="img/Logo.png" id= "logo" 	style="width:300px; height: 200px;">
 <br>
 <br>
-<br>
-<br>
+		<header style="text-align: center;">	
+			<p><img src="img/user.png"> <strong>${u.nomUsuario} ${u.apePatUsu } </strong></p>
+		</header>
+
+
+
+
+
 <form method="post" name="frmPagina" id="frmPagina" target="F2">
 	
 		  <table cellpadding="1" cellspacing="0" border="0" bgcolor="#4A0018" width="217">
@@ -165,7 +171,7 @@
 								<tbody><tr>
 									<td width="9"></td>
 									<td valign="center" width="15" align="left">
-										<img border="0" height="15" src="#" width="15"><br>
+										
 					                </td>
 									<td valign="center" align="left" width="181" height="13">												
 										
@@ -212,7 +218,7 @@
 								<tbody><tr>
 									<td width="9"></td>
 									<td valign="center" width="15" align="left">
-										<img border="0" height="15" src="Imagen/Icono_Aplicacion.gif" width="15"><br>
+										
 					                </td>
 									<td valign="center" align="left" width="181" height="13">										
 													
@@ -236,11 +242,11 @@
 						</tbody></table>
 						</span>
 					
-					<table border="0" cellpadding="0" cellspacing="0" width="400">
+					<table style="border:0; cellpadding:0; cellspacing:0; width:400">
 					<tbody><tr height="20"><td height="20"></td></tr>
 					</tbody></table>
 							
-						<table border="0" cellpadding="0" cellspacing="0" width="389" height="1">
+						<table style="border:0; cellpadding:0; cellspacing:0; width:=389; height:1">
 						  <tbody><tr valign="top">
 							<td width="5" align="left"></td>
 							<td align="left" width="20">
@@ -257,14 +263,14 @@
 						  </tr>
 						</tbody></table>
 
-						<span align="left" id="sec3" style="display: none;">
+						<span id="sec3"  style="display: none;align:left;">
 						<table border="0" cellspacing="0" cellpadding="0" width="399">
 							
 								<input type="hidden" id="hddpaginaopen9" name="hddpaginaopen9" value="ic0020op.asp">
 								<tbody><tr>
 									<td width="9"></td>
 									<td valign="center" width="15" align="left">
-										<img border="0" height="15" src="Imagen/Icono_Aplicacion.gif" width="15"><br>
+										
 					                </td>
 									<td valign="center" align="left" width="181" height="13">										
 										
@@ -281,7 +287,7 @@
 							
 								
                                  
-								</tr>
+							
 							
 								
 
@@ -310,6 +316,9 @@
 		</tr>
 		</tbody></table>
 		<br>
+		
+		
+		<a href="loginusu">Cerrar sesión</a>
 		
 </form>
 </div>

@@ -34,8 +34,8 @@
 				<div class="CrearCuenta" style=" margin: 0 0 0 300px">
 						<a href="#"><h6>Crear cuenta</h6></a>
 				</div>
-				  ${mensaje}
-				<form action="loginusu" method="post">
+				  
+				<form action="loginusu?opcion=r" method="post">
 				<div class="campos" >
 				        <span style="font-weight: bold; margin-right: 70px">Nombre(s): </span>
 				        <input type="text" size="50" placeholder="ingresar nombre" required="required" pattern="{1,30}" name="nombre" style="margin: 1%" maxlength="30" >
@@ -69,7 +69,8 @@
 						<br>
 						
 					<div style=" margin: 10px 0 0 0;"> 
-						<button type="button" class="btn btn-primary" onclick="Registrar()"  style=" float: right;">Registrar</button>
+						<button type="submit" class="btn btn-primary"  style=" float: right;">Registrar</button>
+						${mensaje }
 						<a href="Loggin.jsp"><button type="button" class="btn btn-outline-secondary" style=" float: left;">Volver</button> </a>
 						</div>
 						<br>
@@ -78,6 +79,7 @@
 						</div>
 				</div>
 				</form>
+				
 				</div>
 		</div>
 	</div>
@@ -105,9 +107,7 @@ function validate(evt) {
 	    if(theEvent.preventDefault) theEvent.preventDefault();
 	  }
 	}
-function Registrar() {
-	  alert("Usuario registrado con éxito, su código de Usuario es: 00000XXXX. Se le envió constancia del registro a su Email");
-	}
+
 </script>
-</script>
+
 </html>

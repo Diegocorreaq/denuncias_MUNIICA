@@ -29,7 +29,7 @@
   						<h6 style="color: #A19B9A">gestionar tu denuncia.</h6>
   				</div>
 		</div>
-		<form class="user" data-toggle="validator" role="form" action="sesionserv?accion=INICIAR"  method="post" id="iniciarSesion"  >
+		<form class="user" data-toggle="validator" role="form" action="loginusu?opcion=INICIAR"  method="post" id="iniciarSesion"  >
 			<div class="derecha" style="float: right; margin: 100px 80px 0 0">
 				<div class="CrearCuenta" style=" margin: 0 0 0 300px">
 				
