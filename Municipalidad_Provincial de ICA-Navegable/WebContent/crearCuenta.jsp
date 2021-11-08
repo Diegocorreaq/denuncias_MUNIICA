@@ -67,8 +67,9 @@
 						<input type="password" size="50" placeholder="ingresar una Contraseña" required="required" pattern="{1,30}" name="clave" style="margin: 1%" maxlength="30">
 						<br>
 						
-						<div style=" margin: 10px 0 0 0;"> 
-						<button type="submit" name="opcion" value="r" class="btn btn-primary">Registrar</button>
+					<div style=" margin: 10px 0 0 0;"> 
+						<button type="button" class="btn btn-primary" onclick="Registrar()"  style=" float: right;">Registrar</button>
+						<a href="Loggin.jsp"><button type="button" class="btn btn-outline-secondary" style=" float: left;">Volver</button> </a>
 						</div>
 						<br>
 						<div style="float: left; margin: 10px 0 0 20px" >
@@ -103,5 +104,9 @@ function validate(evt) {
 	    if(theEvent.preventDefault) theEvent.preventDefault();
 	  }
 	}
+function Registrar() {
+	  alert("Usuario registrado con éxito, su código de Usuario es: 00000XXXX. Se le envió constancia del registro a su Email");
+	}
+</script>
 </script>
 </html>

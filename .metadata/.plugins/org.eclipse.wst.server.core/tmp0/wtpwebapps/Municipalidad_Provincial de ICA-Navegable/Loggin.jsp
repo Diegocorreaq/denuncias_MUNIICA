@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,13 +18,7 @@
 <body>
   
 	<div class="container" style=" margin: 2% auto">
-	<c:if test="${requestScope.MENSAJE!=null}">
-			<div class="alert alert-light alert-dismissible fade show" role="alert">
-			  <strong></strong><i class="fas fa-exclamation-circle alerta"></i>
-			  <h6>${requestScope.MENSAJE}</h6>
-			 
-			</div>
-		</c:if>
+	
 		<div class= "izquierda" style="float: left; margin: 0 0 0 100px; width: 40%; height: 30%">
   				<img src="img/Logo.png" id= "logo" 	style="width: 100%; height: 100%;">
   				<br>
@@ -43,11 +38,22 @@
 						<input type="text" required="required" pattern="{1,8}" size="50" placeholder="DNI Usuario" onkeypress='validate(event)' name="login" style=""/>
 						<br>
 						<input type="password" size="50" required="required" pattern="{1,30}" placeholder="Contraseña" name="clave" style="margin: 20px 0 0 0"/>
-						<br>
+						
+						
+						<c:if test="${requestScope.MENSAJE!=null}">
+							<div class="alert alert-light alert-dismissible fade show" role="alert">
+							  <strong></strong><i class="fas fa-exclamation-circle alerta"></i>
+							  <h6>${requestScope.MENSAJE}</h6>
+							 
+							</div>
+						</c:if>
+						
+						
+						
 						<div style=" margin: 10px 0 0 0;"> 
 						<a href="recuperarContraseña.jsp">
 						<h6 style="float: left">¿Olvidó su contraseña?</h6></a>
-						 <button type="submit" id="btnIniciar" style=" float: right; width: 110px; height: 30px"><span class="boton">Iniciar Sesion</span></button>
+						 <button type="submit" class="btn btn-outline-secondary" id="btnIniciar" style=" float: right;"><span class="boton">Iniciar Sesion</span></button>
 						</div>
 						<br>
 						<div style="float: left; margin: 10px 0 0 20px" >
