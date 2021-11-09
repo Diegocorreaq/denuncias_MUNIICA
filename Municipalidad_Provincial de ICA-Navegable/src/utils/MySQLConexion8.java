@@ -9,7 +9,7 @@ public class MySQLConexion8 {
         Connection con = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            String url = "jdbc:mysql://localhost/bd_denuncias_ica?useSSL=false&useTimezone=true&serverTimezone=UTC";
+            String url = "jdbc:mysql://localhost/AtencionDenuncias?useSSL=false&useTimezone=true&serverTimezone=UTC";
             String usr = "root";
             String psw = "Mysql";
             con = DriverManager.getConnection(url, usr, psw);
